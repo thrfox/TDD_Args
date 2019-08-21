@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c80e4e98-44ee-465e-a0ae-b7446810a9cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Args.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Schema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SchemaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Analyst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Parse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SplitUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AnalystTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ParseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SplitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ArgsAnalyst.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ArgsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ArgsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ArgsAnalyst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ArgsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ArgsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Args.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Args.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Schema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Schema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ArgsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CommandTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SchemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SchemaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ArgsTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,11 +76,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArgsTest">
-    <configuration name="ArgsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ParseTest">
+    <configuration name="AnalystTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD_ArgsTrain" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ArgsTest" />
+      <option name="MAIN_CLASS_NAME" value="AnalystTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,10 +95,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchemaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD_ArgsTrain" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SchemaTest" />
+      <option name="MAIN_CLASS_NAME" value="ParseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArgsTest" />
+        <item itemvalue="JUnit.ParseTest" />
+        <item itemvalue="JUnit.AnalystTest" />
         <item itemvalue="JUnit.CommandTest" />
         <item itemvalue="JUnit.SchemaTest.test_with_number_str" />
         <item itemvalue="JUnit.SchemaTest.test" />
-        <item itemvalue="JUnit.SchemaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -144,6 +149,7 @@
       <workItem from="1565926323285" duration="4872000" />
       <workItem from="1566176790850" duration="2814000" />
       <workItem from="1566281978198" duration="11199000" />
+      <workItem from="1566382209298" duration="759000" />
     </task>
     <task id="LOCAL-00001" summary="v2">
       <created>1566282167581</created>
@@ -172,18 +178,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Command.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="v3" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

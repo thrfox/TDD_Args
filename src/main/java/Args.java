@@ -1,16 +1,15 @@
-import java.util.stream.Stream;
+import lombok.Data;
 
+@Data
 public class Args {
 
-    private Schema schema;
-    private Command command;
+    private String flag;
+    private String type;
+    private Object value;
 
-    public Args(String schema, String command) {
-        this.schema = new Schema(schema);
-        this.command = new Command(command);
-    }
+    public Args(String flag, String type, String strValue) {
+        // strValue根据type转换成对应的类型，并成为一个entity实体
 
-    public Object getValue(String flag){
-        return schema.getTypeValue(flag, command.getValueByFlag(flag));
+        // 最后从实体中取出最终的value值
     }
 }
