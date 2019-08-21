@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c80e4e98-44ee-465e-a0ae-b7446810a9cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Args.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Schema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SchemaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/ArgsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/SchemaEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Parse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ParseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ArgsAnalyst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Args.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Args.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Schema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Schema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ArgsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ArgsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ArgsAnalyst.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CommandTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SchemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SchemaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/ArgsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ArgsTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="v1" />
+        <entry key="$PROJECT_DIR$" value="v4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,39 +84,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArgsTest.test_has_not_default_value" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD_ArgsTrain" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CommandTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SchemaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDD_ArgsTrain" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SchemaTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SchemaTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDD_ArgsTrain" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SchemaTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="ArgsTest" />
+      <option name="METHOD_NAME" value="test_has_not_default_value" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchemaTest.test_with_number_str" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArgsTest.test_parse_three" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD_ArgsTrain" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SchemaTest" />
-      <option name="METHOD_NAME" value="test_with_number_str" />
+      <option name="MAIN_CLASS_NAME" value="ArgsTest" />
+      <option name="METHOD_NAME" value="test_parse_three" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDD_ArgsTrain" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParseTest.test_args_is_default" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDD_ArgsTrain" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParseTest" />
+      <option name="METHOD_NAME" value="test_args_is_default" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParseTest.test_args_is_default" />
+        <item itemvalue="JUnit.ParseTest" />
+        <item itemvalue="JUnit.ArgsTest.test_parse_three" />
+        <item itemvalue="JUnit.ArgsTest.test_has_not_default_value" />
         <item itemvalue="JUnit.ArgsTest" />
-        <item itemvalue="JUnit.CommandTest" />
-        <item itemvalue="JUnit.SchemaTest.test_with_number_str" />
-        <item itemvalue="JUnit.SchemaTest.test" />
-        <item itemvalue="JUnit.SchemaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +147,8 @@
       <workItem from="1565926309192" duration="6000" />
       <workItem from="1565926323285" duration="4872000" />
       <workItem from="1566176790850" duration="2814000" />
-      <workItem from="1566281978198" duration="11199000" />
+      <workItem from="1566281978198" duration="18660000" />
+      <workItem from="1566367536988" duration="8484000" />
     </task>
     <task id="LOCAL-00001" summary="v2">
       <created>1566282167581</created>
@@ -152,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566282167581</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v2">
+      <created>1566351747768</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1566351747768</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,9 +191,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Command.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/main/java/Parse.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Schema.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Parse.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,42 +1,56 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.Stream;
+import Entity.SchemaEntity;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Schema {
 
-    Map<String, String> map = new HashMap<>();
+    /**
+     * 解析出来可使用的schema
+     */
+    private List<SchemaEntity> canBeUsedSchema = new ArrayList<>();
+
+    public Schema(String schema) {
+        String[] elements = schema.split("%");
+        for (int i = 0; i < elements.length; i++) {
+            SchemaEntity schemaEntity = new SchemaEntity();
+            String e = elements[i];
+            String[] flag_TypeDefault = e.split(":");
+            String[] type_default = flag_TypeDefault[1].split(">");
+            schemaEntity.setFlag(flag_TypeDefault[0]);
+            schemaEntity.setType(type_default[0]);
+            canBeUsedSchema.add(schemaEntity);
+        }
+    }
 
     /**
-     * 分解参数类型，放入map
+     * 取得标记的值,定义类型
      *
-     * @param schemaDefine
+     * @param flag
+     * @return
      */
-    public Schema(String schemaDefine) {
-        String[] schema = schemaDefine.split(",");
-        for (int i = 0; i < schema.length; i++) {
-            String[] s = schema[i].split(":");
-            String flag = s[0];
-            String type = s[1];
-            map.put(flag, type);
-        }
+    public Object getValue(String flag, String value) {
+        for (int i = 0; i < canBeUsedSchema.size(); i++) {
+            SchemaEntity schema = canBeUsedSchema.get(i);
+            if (flag.equals(schema.getFlag())) {
+                switch (schema.getType()) {
+                    case "bool":
+                        return Boolean.valueOf(value == null ? "true" : value);
+                    case "int":
+                        return Integer.valueOf(value == null ? "8080" : value);
+                    case "str":
+                        return value == null ? "/usr" : value;
+                    case "list":
+                        return value == null ? Collections.EMPTY_LIST.toArray() : Arrays.asList(value.replaceAll("[\\[\\]\"']", "").split(",")).toArray();
+                    default:
+                        throw new RuntimeException("解析错误:" + schema.getType());
+                }
 
+            }
+        }
+        return null;
     }
 
-    public Object getTypeValue(String flag, String strValue) {
-        String type = map.get(flag);
-        if (strValue == null) {
-            return null;
-        }
-        switch (type) {
-            case "bool":
-                return Boolean.valueOf(strValue);
-            case "int":
-                return new Integer(strValue);
-            case "str":
-                return strValue;
-            default:
-                return "";
-        }
-
-    }
 }
