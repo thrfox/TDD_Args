@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c80e4e98-44ee-465e-a0ae-b7446810a9cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Analyst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Parse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SplitUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AnalystTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ParseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SplitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Args.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Args.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Schema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Schema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ArgsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CommandTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SchemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SchemaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ArgsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SplitUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SplitUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AnalystTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AnalystTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SplitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SplitTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParseTest">
+  <component name="RunManager" selected="JUnit.AnalystTest">
     <configuration name="AnalystTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD_ArgsTrain" />
       <option name="PACKAGE_NAME" value="" />
@@ -86,39 +78,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AnalystTest.test_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD_ArgsTrain" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CommandTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDD_ArgsTrain" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParseTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SchemaTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDD_ArgsTrain" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SchemaTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="AnalystTest" />
+      <option name="METHOD_NAME" value="test_1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchemaTest.test_with_number_str" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SplitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD_ArgsTrain" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SchemaTest" />
-      <option name="METHOD_NAME" value="test_with_number_str" />
+      <option name="MAIN_CLASS_NAME" value="SplitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SplitTest.split_mutil_command_to_one_args" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDD_ArgsTrain" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SplitTest" />
+      <option name="METHOD_NAME" value="split_mutil_command_to_one_args" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SplitTest.test_split_schema" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDD_ArgsTrain" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SplitTest" />
+      <option name="METHOD_NAME" value="test_split_schema" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParseTest" />
         <item itemvalue="JUnit.AnalystTest" />
-        <item itemvalue="JUnit.CommandTest" />
-        <item itemvalue="JUnit.SchemaTest.test_with_number_str" />
-        <item itemvalue="JUnit.SchemaTest.test" />
+        <item itemvalue="JUnit.SplitTest" />
+        <item itemvalue="JUnit.SplitTest.split_mutil_command_to_one_args" />
+        <item itemvalue="JUnit.SplitTest.test_split_schema" />
+        <item itemvalue="JUnit.AnalystTest.test_1" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +142,7 @@
       <workItem from="1565926323285" duration="4872000" />
       <workItem from="1566176790850" duration="2814000" />
       <workItem from="1566281978198" duration="11199000" />
-      <workItem from="1566382209298" duration="759000" />
+      <workItem from="1566382209298" duration="6480000" />
     </task>
     <task id="LOCAL-00001" summary="v2">
       <created>1566282167581</created>
@@ -158,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566282167581</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v4 未实现">
+      <created>1566383025769</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1566383025769</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +182,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="v2" />
     <MESSAGE value="v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="v3" />
+    <MESSAGE value="v4 未实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="v4 未实现" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

@@ -10,6 +10,14 @@ public class SplitTest {
         Assert.assertArrayEquals(commandByValue, new String[]{"-l true", "-p 8080", "-d /usr"});
     }
 
+
+    @Test
+    public void split_mutil_command_by_default_args() {
+        String fullCommand = "-l -p -d /usr";
+        String[] commandByValue = SplitUtils.splitCommand(fullCommand);
+        Assert.assertArrayEquals(commandByValue, new String[]{"-l", "-p", "-d /usr"});
+    }
+
     @Test
     public void test_split_schema() {
         String schemaRule = "l:bool%p:int";
